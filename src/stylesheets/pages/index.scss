@@ -1,0 +1,140 @@
+$primary: #0a4068;
+$muted: #5b6776;
+$line: #d9dee5;
+$surface: #f4f6f9;
+
+/* Tarjetas resumen (Inicio e Historial) */
+.summary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid $line;
+  border-radius: 8px;
+  background: #fff;
+
+  &__label { font-size: 13px; color: $muted; }
+  &__value { font-size: 22px; }
+  &__hint { font-size: 13px; color: $muted; }
+
+  &--ok { border-left: 5px solid #1b7a3f; }
+  &--alert { border-left: 5px solid #c0392b; }
+}
+
+.home-page {
+  &__greeting { margin: 0; font-size: 22px; }
+  &__subtitle { margin: 4px 0 18px; color: $muted; }
+  &__summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  &__section-title { margin: 28px 0 10px; font-size: 18px; }
+  &__goals { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+}
+
+.goal-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid $line;
+  border-radius: 8px;
+  background: $surface;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover { border-color: $primary; background: #eaf2f9; }
+  &:focus-visible { outline: 3px solid #f2a900; outline-offset: 2px; }
+
+  &__title { font-size: 17px; font-weight: 700; color: $primary; }
+  &__text { line-height: 1.4; color: #3a4655; }
+  &__cta { margin-top: auto; font-weight: 600; color: $primary; }
+}
+
+.benefits-page {
+  &__subtitle { margin: 0 0 10px; font-size: 16px; }
+  &__status {
+    background: $surface;
+    border: 1px solid $line;
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+}
+
+.status-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 6px 0; }
+  &__text { line-height: 1.4; }
+}
+
+/* Historial */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-bottom: 2px solid $line;
+  margin-bottom: 16px;
+
+  &__tab {
+    background: none;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    padding: 10px 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: $muted;
+
+    &--active { color: $primary; border-bottom-color: $primary; }
+    &:focus-visible { outline: 3px solid #f2a900; outline-offset: -3px; }
+  }
+
+  &__tag {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: #dff3e6;
+    color: #1b7a3f;
+    font-size: 11px;
+
+    &--current { background: #e3e9f2; color: #33445c; }
+  }
+}
+
+.answer {
+  background: #f3f8fc;
+  border: 2px solid $primary;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+
+  &__title { margin: 0 0 6px; font-size: 16px; color: $primary; }
+  &__text { margin: 0; font-size: 17px; line-height: 1.5; }
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+}
+
+.installments {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $line;
+  border-radius: 8px;
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 12px 14px;
+    border-bottom: 1px solid $line;
+
+    &:last-child { border-bottom: 0; }
+  }
+}
