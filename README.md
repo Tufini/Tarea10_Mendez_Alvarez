@@ -10,9 +10,8 @@ Todos los datos son ficticios. Parte del repositorio base
 
 | Hipótesis | Metas | Pantalla |
 |-----------|----------------------------|----------|
-| H1 | Confirmar sin dudas que su beca y su CAE llegaron | `/beneficios` |
-| H2 | Entender qué significan Cargo, Pago, Saldo y Recibo | `/movimientos` |
-| H3 | Encontrar sin confusión lo que pagó el semestre pasado | `/historial` |
+| M1 | Confirmar sin dudas que su beca y su CAE llegaron | `/beneficios` |
+| M2 | Entender qué significan Cargo, Pago, Saldo y Recibo | `/movimientos` |
 
 ## Cómo ejecutarlo
 
@@ -22,10 +21,4 @@ npm run dev     # http://localhost:5050
 npm run prod    # build de producción
 ```
 
-## Estructura
-
-- `src/data/account.js`: datos ficticios (movimientos, cuotas, becas)
-- `src/pages/`: una página por meta (+ inicio)
-- `src/components/`: layout, barra de navegación, tooltip, etiqueta de estado
-- `src/stylesheets/`: estilos SCSS con nomenclatura BEM
 
