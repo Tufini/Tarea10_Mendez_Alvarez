@@ -4,7 +4,9 @@ import { NavLink } from 'react-router-dom'
 const LINKS = [
   { to: '/', label: 'Inicio', end: true },
   { to: '/beneficios', label: 'Becas y beneficios' },
-  { to: '/historial', label: 'Historial por semestre' }
+  { to: '/historial', label: 'Historial por semestre' },
+  { to: '/pagar', label: 'Pagar' },
+  { to: '/datos', label: 'Datos' }
 ]
 
 export const NavBar = () => {
