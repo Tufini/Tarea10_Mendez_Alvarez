@@ -1,4 +1,7 @@
 # Tarea10_Mendez_Alvarez
+Maximiliano Méndez Rageasse 202273630-5
+Martina Álvarez Espinoza 202273612-7
+
 # MVP Autoservicio · Transparencia financiera
 
 Producto Mínimo Viable (solo frontend, React + Webpack) del rediseño del Portal de Autoservicio
