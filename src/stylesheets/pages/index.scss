@@ -138,3 +138,251 @@ $surface: #f4f6f9;
     &:last-child { border-bottom: 0; }
   }
 }
+
+.payment-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+
+  &__title { margin-bottom: 16px; }
+  &__subtitle { margin: 24px 0 8px; font-size: 1.1rem; }
+
+  /* Opciones para modo de pago y medio de pago */
+  &__methods { display: flex; flex-direction: column; gap: 8px; }
+  &__method { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+  &__method-sub { display: block; color: $muted; font-size: 0.85rem; }
+
+  &__amount-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 12px;
+    margin: 12px 0 4px;
+  }
+
+  /* Botón "Especificar monto" */
+  &__toggle {
+    padding: 10px 16px;
+    border: 2px solid $primary;
+    border-radius: 8px;
+    background: #fff;
+    color: $primary;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover { background: #eaf2f9; }
+    &:focus-visible { outline: 3px solid #f2a900; outline-offset: 2px; }
+
+    &--on {
+      background: $primary;
+      color: #fff;
+      box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.35);
+
+      &:hover { background: $primary; }
+    }
+  }
+
+  /* Pago por monto específico */
+  &__amount-input {
+    flex: 1 1 220px;
+    max-width: 320px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid $line;
+    border-radius: 8px;
+
+    &:focus { border-color: $primary; outline: none; }
+  }
+  &__error { color: #c0392b; font-weight: 600; margin-top: 6px; }
+
+  /* Tabla de cuotas */
+  &__table-wrap { overflow-x: auto; margin-top: 12px; }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid $line;
+
+    th, td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid $line;
+    }
+
+    th {
+      background: $surface;
+      font-size: 0.9rem;
+      color: $muted;
+    }
+
+    td:nth-child(2) { font-weight: 700; }                 /* Monto */
+    th:last-child, td:last-child { text-align: center; }  /* Checkbox */
+
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr:hover { background: #f7f9fc; }
+  }
+
+  /* Resumen y botón */
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0 12px;
+    padding: 12px;
+    background: #f2f4f7;
+    border-radius: 8px;
+    font-size: 1.1rem;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    background: #1d4ed8;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:disabled { background: #98a2b3; cursor: not-allowed; }
+  }
+
+  &__hint { color: #667085; font-size: 0.9rem; margin-top: 8px; }
+
+  /* Comprobante */
+  &__receipt {
+    border: 2px solid #12b76a;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  &__receipt-list { margin: 12px 0; }
+}
+
+/* Acceso a "Mis datos" en el Inicio */
+.update-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 14px 18px;
+  border: 1px solid $line;
+  border-left: 5px solid $primary;
+  border-radius: 8px;
+  background: $surface;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover { border-color: $primary; background: #eaf2f9; }
+  &:focus-visible { outline: 3px solid #f2a900; outline-offset: 2px; }
+
+  &__text { display: flex; flex-direction: column; gap: 2px; line-height: 1.4; }
+  &__title { font-size: 17px; font-weight: 700; color: $primary; }
+  &__cta { font-weight: 600; color: $primary; }
+}
+
+/* Mis datos */
+.data-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+
+  &__title { margin: 0 0 4px; }
+  &__subtitle { margin: 28px 0 10px; font-size: 1.1rem; }
+  &__note { margin: 0 0 10px; color: $muted; }
+
+  &__list {
+    margin: 0;
+    border: 1px solid $line;
+    border-radius: 8px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4px 16px;
+    padding: 12px 16px;
+    border-bottom: 1px solid $line;
+
+    &:last-child { border-bottom: 0; }
+
+    dt { color: $muted; }
+    dd { margin: 0; font-weight: 600; }
+  }
+
+  &__section-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 28px 0 10px;
+
+    .data-page__subtitle { margin: 0; }
+  }
+
+  &__success {
+    margin: 0 0 12px;
+    padding: 10px 14px;
+    border-left: 5px solid #1b7a3f;
+    border-radius: 6px;
+    background: #dff3e6;
+    color: #14532d;
+    font-weight: 600;
+  }
+
+  /* Formularios de edición */
+  &__form { padding: 16px; border: 1px solid $line; border-radius: 8px; }
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0 0 14px;
+
+    label { font-weight: 600; }
+  }
+  &__input {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid $line;
+    border-radius: 8px;
+    background: #fff;
+
+    &:focus { border-color: $primary; outline: none; }
+    &--error { border-color: #c0392b; }
+  }
+  &__error { margin: 0; color: #c0392b; font-size: 0.9rem; font-weight: 600; }
+  &__actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+  &__button {
+    padding: 8px 18px;
+    border: 2px solid $primary;
+    border-radius: 8px;
+    background: $primary;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:focus-visible { outline: 3px solid #f2a900; outline-offset: 2px; }
+    &--ghost { background: #fff; color: $primary; }
+  }
+
+  /* Becas */
+  &__benefits { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  &__benefit { padding: 14px 16px; border: 1px solid $line; border-radius: 8px; background: #fff; }
+  &__benefit-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
+  &__benefit-line { margin: 2px 0; line-height: 1.4; color: #3a4655; }
+
+  &__badge {
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    &--ok { background: #dff3e6; color: #1b7a3f; }
+    &--info { background: #e3e9f2; color: #33445c; }
+    &--warn { background: #fdf0d2; color: #8a5a00; }
+  }
+}
