@@ -18,7 +18,7 @@ Todos los datos son ficticios. Parte del repositorio base
 | M3 | Calcular el total a pagar sin pasos redundantes  | `/pagar` |
 | M4 | Actualizar su cuenta bancaria en menos pasos  | `/datos` |
 
-Ingrese a [Wiki](../../wiki) para ver las imágenes adjuntas.
+
 ## Cómo ejecutarlo
 
 ```
