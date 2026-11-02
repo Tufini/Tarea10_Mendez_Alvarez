@@ -14,7 +14,7 @@ Todos los datos son ficticios. Parte del repositorio base
 | Hipótesis | Metas | Pantalla |
 |-----------|----------------------------|----------|
 | M1 | Confirmar sin dudas que su beca y su CAE llegaron | `/beneficios` |
-| M2 | Entender qué significan Cargo, Pago, Saldo y Recibo | `/movimientos` |
+| M2 | Encontrar sin confusión lo que pagó el semestre pasado | `/movimientos` |
 | M3 | Calcular el total a pagar sin pasos redundantes  | `/pagar` |
 | M4 | Actualizar su cuenta bancaria en menos pasos  | `/datos` |
 
