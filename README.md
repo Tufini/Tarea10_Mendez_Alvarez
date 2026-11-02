@@ -1,6 +1,6 @@
 # Tarea10_Mendez_Alvarez
-> * **Maximiliano Méndez Rageasse** *202273630-5*
-> * **Martina Álvarez Espinoza** *202273612-7*
+> **Maximiliano Méndez Rageasse** ~ *202273630-5* \
+> **Martina Álvarez Espinoza** ~ *202273612-7*
 
 # MVP Autoservicio · Transparencia financiera
 
