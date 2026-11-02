@@ -5,6 +5,8 @@ import NavBar from './nav_bar'
 import HomePage from '../pages/home_page'
 import BenefitsPage from '../pages/benefits_page'
 import HistoryPage from '../pages/history_page'
+import PaymentPage from '../pages/payment_page'
+import DataPage from '../pages/data_page'
 
 const Layout = () => {
   return (
@@ -20,6 +22,8 @@ const Layout = () => {
             <Route path='/' element={<HomePage />} />
             <Route path='/beneficios' element={<BenefitsPage />} />
             <Route path='/historial' element={<HistoryPage />} />
+            <Route path='/pagar' element={<PaymentPage />} />
+            <Route path='/datos' element={<DataPage />} />
             <Route path='*' element={<Navigate to='/' replace />} />
           </Routes>
         </main>
