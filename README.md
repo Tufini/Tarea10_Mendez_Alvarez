@@ -18,6 +18,7 @@ Todos los datos son ficticios. Parte del repositorio base
 | M3 | Calcular el total a pagar sin pasos redundantes  | `/pagar` |
 | M4 | Actualizar su cuenta bancaria en menos pasos  | `/datos` |
 
+Imágenes adjuntas en la wiki [Ir a la Wiki]([https://github.com](https://github.com/Tufini/Tarea10_Mendez_Alvarez/wiki/MVP-Plataforma-de-Autoservicios-USM))
 ## Cómo ejecutarlo
 
 ```
