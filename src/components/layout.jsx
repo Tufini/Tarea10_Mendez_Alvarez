@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 import NavBar from './nav_bar'
 import HomePage from '../pages/home_page'
@@ -10,7 +10,7 @@ import DataPage from '../pages/data_page'
 
 const Layout = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='layout'>
         <div className='layout__notice'>
           Prototipo académico (MVP) con datos ficticios · No corresponde al portal oficial
@@ -28,7 +28,7 @@ const Layout = () => {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
